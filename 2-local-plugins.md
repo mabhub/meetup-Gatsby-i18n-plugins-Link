@@ -1,33 +1,4 @@
-
-
-
-
-
-
-
-
-
-
-
 # Organiser les différents métiers avec des plugins locaux
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ---
 
@@ -55,24 +26,6 @@ module.exports = {
 };
 ```
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ---
 
 ## Plugin local
@@ -95,24 +48,6 @@ module.exports = {
 
 Doc : https://www.gatsbyjs.org/docs/creating-a-local-plugin/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ---
 
 ### APIs utilisables
@@ -123,27 +58,9 @@ Les 3 API Gatsby sont utilisables dans les plugins.
 - gatsby-browser.js
 - gatsby-ssr.js
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ---
 
-### Organiser son code / factorisation
+### Organiser son code / factorisation
 
 On peut donc placer les différents métiers applicatifs
 dans différents plugins locaux :
@@ -164,44 +81,6 @@ On évite ainsi d'avoir un unique `gatsby-node.js` à la racine du site.
 + Pérénité
 + Lisibilité
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ---
 
 ## Demo / live coding
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
----

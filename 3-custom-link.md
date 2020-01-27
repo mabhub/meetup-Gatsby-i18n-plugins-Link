@@ -1,33 +1,4 @@
-
-
-
-
-
-
-
-
-
-
-
 # Composant personnalisé pour les liens localisés
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ---
 
@@ -47,24 +18,6 @@ export default props => (
 );
 ```
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ---
 
 ### Problème des routes localisées
@@ -81,24 +34,6 @@ avec des routes différentes :
 
 On souhaite que depuis `page-2` un lien
 vers une autre page préserve la bonne langue.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ---
 
@@ -122,8 +57,6 @@ export default CustomLink;
 
 > Idéalement, on ajoute `React.forwardRef()`
 
-
-
 ---
 
 ### Utilisation simple
@@ -136,23 +69,3 @@ le `<Link />` de Gatsby, par celui qu'on vient de créer :
 - import { Link } from 'gatsby';
 + import Link from '../components/custom-link.js';
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
----

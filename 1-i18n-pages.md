@@ -1,30 +1,4 @@
-
-
-
-
-
-
-
-
-
-
-
 # Création de routes/pages pour l'internationalisation
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ---
 
@@ -37,23 +11,6 @@
 - Qui a déjà écrit un plugin Gatsby ? *(les starters ne comptent pas 😉)*
 - Qui l'a publié ?
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ---
 
 ## Starter minimaliste
@@ -61,23 +18,11 @@
 Le starter *gatsby-starter-hello-world* est le plus petit.
 Aucun plugin ni configuration par défaut.
 
-`gatsby new mon-site https://github.com/gatsbyjs/gatsby-starter-hello-world`
+```shell
+gatsby new hello-world https://github.com/gatsbyjs/gatsby-starter-hello-world
+```
 
 > Il n'est *pas* conseillé de partir de celui-là en général.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ---
 
@@ -99,21 +44,6 @@ pour chaque fichier JS du dossier `src/pages`
 
 Doc : https://www.gatsbyjs.org/docs/creating-and-modifying-pages/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ---
 
 ### Un simple composant React
@@ -128,25 +58,6 @@ import React from 'react';
 export default props => <div>Hello world (page2)</div>;
 ```
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ---
 
 ### Astuce
@@ -158,25 +69,6 @@ permet d'accéder à l'ensemble des pages existantes.
 - http://localhost:8000/poufpouf/
 
 Doc : https://www.gatsbyjs.org/docs/add-404-page/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ---
 
@@ -190,23 +82,6 @@ Gatsby fournit 4 fichiers pour contrôler son comportement :
 - gatsby-ssr.js :     Serve side rendering
 
 Doc : https://www.gatsbyjs.org/docs/api-files/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ---
 
@@ -224,28 +99,9 @@ exports.onPostBuild = async () => { /* */ };
 ```
 
 > Hooks, Extension points, etc. :
->   Fonctions qu'on exporte, qui seront appelées par Gatsby
+> Fonctions qu'on exporte, qui seront appelées par Gatsby
 
 Doc : https://www.gatsbyjs.org/docs/node-apis/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ---
 
@@ -255,25 +111,6 @@ Ces hooks fournissent des `actions`.
 Parmi ces actions, la fonction `createPage()` put être appelée.
 
 Doc : https://www.gatsbyjs.org/docs/node-apis/#createPages
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ---
 
@@ -291,31 +128,14 @@ exports.createPages = async ({ actions }) => {
 
 };
 ```
+
 > Les fonctions de l'objet `actions`, sont des *dispatch* d'actions Redux.
 
 Doc :
+
 - https://www.gatsbyjs.org/docs/actions/
 - https://www.gatsbyjs.org/docs/actions/#createPage
 - https://redux.js.org/api/bindactioncreators/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ---
 
@@ -330,25 +150,6 @@ on veut créer une route pour **chaque langue**.
 
 Mais on souhaite éviter d'avoir à
 créer un fichier JS / langue / page.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ---
 
@@ -365,31 +166,10 @@ exports.onCreatePage = async ({ page, actions }) => {
       path: `/${language}${page.path}`,
       context: { language },
     });
-
-
-  };
+    };
 
 };
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ---
 
@@ -405,22 +185,3 @@ peuvent provenir de n'importe ou :
 C'est ainsi que fonctionnent les plugins *source* (`gatsby-source-*`)
 
 Doc : https://www.gatsbyjs.org/plugins/?=source
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
----
