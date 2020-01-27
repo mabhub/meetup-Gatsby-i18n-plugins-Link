@@ -32,9 +32,9 @@
 
 - Qui a déjà (au moins) bricolé avec Gatsby ?
 - Qui a déjà ouvert un fichier gatsby-node.js ?
-- Qui y a déjà utilisé les hooks de Gatsby ?
+- Qui y a déjà utilisé les *extension points* de Gatsby ? (onCreatePage, onCreateNode, createPage,…)
 - Qui y a déjà créé manuellement des routes ?
-- Qui a déjà écrit un plugin pour Gatsby ?
+- Qui a déjà écrit un plugin Gatsby ? *(les starters ne comptent pas 😉)*
 - Qui l'a publié ?
 
 
