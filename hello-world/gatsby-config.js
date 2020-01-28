@@ -5,5 +5,8 @@
  */
 
 module.exports = {
+  plugins: [
+    'monPlugin'
+  ]
   /* Your site config here */
 }
